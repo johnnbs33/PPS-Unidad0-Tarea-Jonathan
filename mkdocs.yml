@@ -1,6 +1,6 @@
 # mkdocs.yml
 
-# Inicializando fichero makdocs.yml
+# Inicializando fichero mkdocs.yml
 site_name: Tarea Unidad 0 - RA5
 
 # Estructura de navegación
@@ -13,6 +13,6 @@ nav:
   - Conclusiones: conclusiones.md
 
 # Directorios
-doc_dir: docs
+docs_dir: docs
 
-# Fin del fichero makdocs.yml
+# Fin del fichero mkdocs.yml
