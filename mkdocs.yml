@@ -1,0 +1,18 @@
+# mkdocs.yml
+
+# Inicializando fichero makdocs.yml
+site_name: Tarea Unidad 0 - RA5
+
+# Estructura de navegación
+nav:
+  - Home: index.md
+  - Git: guia_uso.md
+  - GitHub Actions: gitActions.md
+  - GitPages: gitPages.md
+  - Docker: docker.md
+  - Conclusiones: conclusiones.md
+
+# Directorios
+doc_dir: docs
+
+# Fin del fichero makdocs.yml
