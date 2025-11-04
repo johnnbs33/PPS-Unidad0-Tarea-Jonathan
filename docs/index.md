@@ -1,12 +1,16 @@
-Calculadora Python
-Bienvenido a la documentación de la Calculadora Python.
+# Tarea Unidad 0 - RA5
+> DevSecOps básico y automatización de la documentación.
 
-Descripción
-Esta calculadora tiene una interfaz gráfica usando Tkinter.
+## Objetivos.
+Esta actividad tiene como objetivo poner en práctica los contenidos tratados en esta unidad:
 
-Uso
-Ejecuta el script calculator/gui.py para iniciar la calculadora.
+* Lenguaje de marcas MarkDown.
+* Sistemas de control de versiones: Git.
+* Creación y administración de contenedores: Docker.
+* Ciclos de desarrollo software seguros: SecDevOps.
+* Documentación.
 
-Requisitos
-Python 3.x
-Tkinter Licencia: CC BY-NC-SA 4.0
+## Enlaces.
+
+1. [Operaciones con Git.](git.md)
+2. [Operaciones con GitHub Actions](gitActions.md)

@@ -6,7 +6,7 @@ site_name: Tarea Unidad 0 - RA5
 # Estructura de navegación
 nav:
   - Home: index.md
-  - Git: guia_uso.md
+  - Git: git.md
   - GitHub Actions: gitActions.md
   - GitPages: gitPages.md
   - Docker: docker.md
