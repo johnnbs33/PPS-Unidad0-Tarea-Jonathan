@@ -14,3 +14,7 @@ Esta actividad tiene como objetivo poner en práctica los contenidos tratados en
 
 1. [Operaciones con Git.](git.md)
 2. [Operaciones con GitHub Actions](gitActions.md)
+3. [GitHub Pages](gitPages.md)
+
+> **Autor:** Jonathan Barbero Sánchez.  
+> Curso de especialización de Ciberseguridad en entornos de las Tencologías de la Información

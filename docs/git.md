@@ -7,13 +7,13 @@
 ---
 
 ## Conexión con GitHub.
->Todas las operaciones se realizarán a través de la terminal.  
+>Todas las operaciones de creación del repositorio en GitHub se realizarán a través de la terminal.  
 
-- En primer lugar, realizaremos una instalacion de las dependencias necesarias para trabajar con git y GitHub.
+- En primer lugar, realizaremos una instalacion de las dependencias necesarias para trabajar con **git** y **GitHub**.
 ```bash
 sudo apt update && sudo apt install git gh
 ```
-- Realizamos una autenticación con GitHub.
+- Realizamos una autenticación en **GitHub**.
 ```bash
 gh auth login
 ```
@@ -34,7 +34,11 @@ git init
 ---
 
 ## Fichero mkdocs.
-- Creamos un fichero llamado mkdocs.yml en el cual, incluiremos la siguientes líneas.
+- Creamos un fichero llamado **mkdocs.yml**.
+```bash
+nano mkdocs.yml
+```
+- En el cual, incluiremos la siguientes líneas.
 ```yaml
 # mkdocs.yml
 
@@ -56,16 +60,23 @@ doc_dir: docs
 # Fin del fichero makdocs.yml
 ```
 
+- Pulsamos `Ctrl + O` para salir del editor nano.
+
 ---
 
 ## Subiendo el repositorio a GitHub.
-- Creamos el primer comit con toda la estructura.
+- Creamos el primer **comit** con toda la estructura.
 ```bash
 git add .
 git commit -am "Inicializando repositorio"
 git branch -M main
 ```
-- A continuación, crearemos el repositorio en GitHub. 
- ```bash
+- A continuación, crearemos el repositorio en GitHub.
+ 
+
+```bash 
 gh repo create johnnbs33/PPS-Unidad0-Tarea-Jonathan --public --source=. --remote=origin --push
 ```
+
+
+---
