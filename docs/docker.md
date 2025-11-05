@@ -1,8 +1,8 @@
 # Docker.
-1. [Preparación del del repositorio.](#Preparación-del-repositorio)
-2. [Creación del entorno Docker.](#Creación-del-entorno-Docker)
-    1. [Rama gh-pages.](#Tips-de-la-rama-gh-pages)
-3. [Iniciando el entorno](#Inicializando-el-entorno)
+1. [Preparación del del repositorio.](#preparación-del-repositorio)
+2. [Creación del entorno Docker.](#creación-del-entorno-Docker)
+    1. [Rama gh-pages.](#tips-de-la-rama-gh-pages)
+3. [Iniciando el entorno](#inicializando-el-entorno)
 ---
 
 ## Preparación del repositorio.
