@@ -3,9 +3,9 @@
 2. [Prepara los cambios y subida a GitHub](#Subiendo-los-ficheros-a-GitHub)
 ---
 
-## Creación de WorkFlow.
+## Creación de Workflow.
 
-- Dentro del directorio `.github/workflows` tendremos el fichero `CreacionDocumentacion.yml`, en el debemos de establecer el workflow que se disparará con cada **push**, para gestionar el despliegue de **MkDocs**.
+- Dentro del directorio `.github/workflows` tendremos el fichero `CreacionDocumentacion.yml`, en él debemos de establecer el workflow que se disparará con cada **push**, para gestionar el despliegue de **MkDocs**.
 - Editamos el fichero:
 ```bash
 nano .github/workflows/CreacionDocumentacion.yml
@@ -37,7 +37,7 @@ jobs:
 
     steps:
     
-    # Paso 1: Obtencion del código fuente
+    # Paso 1: Obtención del código fuente
     - name: Checkout Repo
       uses: actions/checkout@v3
 
@@ -47,7 +47,7 @@ jobs:
       with:
         python-version: '3.x'
 
-    # Paso 3: Instalación de dependencias
+    # Paso 3: Instalar dependencias
     - name: Install dependencies
       run: pip install mkdocs
 
@@ -61,12 +61,12 @@ jobs:
 # -----------------------------------------------------------
 ```
 
-- Pulsamos `Ctrl + O` para salir del editor nano.
+- Pulsamos `Ctrl + O` para guardar los cambios y `Ctrl + X` para salir del editor **nano**.
 
 ---
 
 ## Subiendo los ficheros a GitHub.
-- Una vez hemos guardado el fichero, preparamos el fichero, realizaremos un commit y posterior subida a GitHub.
+- Una vez guardado el fichero, preparamos los cambios, realizamos un **commit** y lo subimos a **GitHub**.
 ```bash
 git add .
 git commit -m "Modificación de CreacionDocumentacion.yml"

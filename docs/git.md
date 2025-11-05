@@ -60,7 +60,7 @@ doc_dir: docs
 # Fin del fichero makdocs.yml
 ```
 
-- Pulsamos `Ctrl + O` para salir del editor nano.
+- Pulsamos `Ctrl + O` para guardar los cambios y `Ctrl + X` para salir del editor **nano**.
 
 ---
 
