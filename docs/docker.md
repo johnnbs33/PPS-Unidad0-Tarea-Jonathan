@@ -1,6 +1,7 @@
 # Docker.
 1. [Preparación del del repositorio.](#Preparación-del-repositorio)
 2. [Creación del entorno Docker.](#Creación-del-entorno-Docker)
+   2.1. [Rama gh-pages.](#Tips-de-la-rama-gh-pages)
 3. [Iniciando el entorno](#Inicializando-el-entorno)
 ---
 
@@ -9,7 +10,7 @@
 ```bash
 git checkout gh-pages
 ```
-> Una vez terminado todo el ejercicio de Docker, si quisieramos volver a la rama **main**, ejeecutariamos el comando siguiente:
+> Una vez terminado todo el ejercicio de Docker, si quisieramos volver a la rama **main**, ejecutariamos el comando siguiente:
 ```bash
 git checkout main
 ```
@@ -50,7 +51,26 @@ services:
   - El nombre del contenedor será **PPSUnidad0-Tarea_Jonathan**.
   - Mapearemos el puerto **8085** del host al **80** del servidor web nginx.
   - Definimos **bind mount** del directorio que aloja los ficheros estáticos del repositorio, hacia el directorio donde nginx busca los archivos web.
- 
+
+### Tips de la rama gh-pages.
+Para mantener actualizada la rama **gh-pages** local, que es generada automáticamente por **GitHub Actions**, el proceso es un poco diferente a un **git pull** normal, ya que esa rama suele ser reescrita por la **acción**.
+
+Pero existe una forma de hacerlo, que es **forzar** la rama **local** para que sea un espejo exacto de la rama **remota**.
+
+- Traemos los cambios del repositorio remoto.
+```bash
+git fetch origin
+```
+- Nos situamos en la rama **gh-pages**.
+```bash
+git switch gh-pages
+```
+- Dado que las GitHub Actions suelen reescribir el historial de **gh-pages**, forzamos la actualización para hacer que la rama local sea exactamente igual a la remota.
+```bash
+git reset --hard origin/gh-pages
+```
+> Los argumentos del comando (**reset --hard**) descarta todos los cambios que **no estén "commiteados"** en la rama en la que nos encontramos. Sin embargo, como la rama gh-pages es auto-generada, nunca deberiamos de tener cambios locales en ella, por lo que este comando es seguro en este contexto.
+
 ---
 
 ## Inicializando el entorno.
@@ -68,5 +88,4 @@ docker compose ps
 ```bash
 docker inspect PPSUnidad0-Tarea_Jonathan
 ```
-
 ---
