@@ -10,17 +10,17 @@
 
 ## Tareas realizadas en orden.
 * Creación del **repositorio**.
-  * Repositorio **local**.
-  * Conexión con **GitHub**.
-  * Repositorio **remoto** en GitHub.
+    * Repositorio **local**.
+    * Conexión con **GitHub**.
+    * Repositorio **remoto** en GitHub.
 * Creación del fichero **MkDocs**.
 * Creación del **Workflow**.
-  * Fichero `CreacionDocumentacion.yml` 
+    * Fichero `CreacionDocumentacion.yml` 
 * Creación de todos los ficheros **Markdown** (`.md`).
-  * Push al repositorio en GitHub.
+    * Push al repositorio en GitHub.
 * Configuración de **GitHub Pages**.
 * Despliegue de **Docker**.
-  * Fichero `docker-compose.yml`
+    * Fichero `docker-compose.yml`
 * Ultimas modificaciones y ajustes de los ficheros Markdown.   
 
 ---
