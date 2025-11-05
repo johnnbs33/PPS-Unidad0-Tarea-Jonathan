@@ -8,7 +8,7 @@ site_author: 'Jonathan Barbero Sánchez'
 # Estructura de navegación
 nav:
   - Home: index.md
-  - Git: guia_uso.md
+  - Git: git.md
   - GitHub Actions: gitActions.md
   - GitPages: gitPages.md
   - Docker: docker.md
