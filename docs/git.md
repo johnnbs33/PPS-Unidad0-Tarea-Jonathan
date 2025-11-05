@@ -1,8 +1,8 @@
 # Operaciones con Git
-1. [Conexión con GitHub.](#Conexión-con-GitHub)
-2. [Preparacion del proyecto y creación del repositorio local.](#Preparación-del-proyecto)
-3. [Fichero mkdocs.yml.](#Fichero-mkdocs)
-4. [Subiendo el repositorio a GitHub.](#Subiendo-el-repositorio-a-GitHub)
+1. [Conexión con GitHub.](#conexion-con-github)
+2. [Preparacion del proyecto y creación del repositorio local.](#preparacion-del-proyecto)
+3. [Fichero mkdocs.yml.](#fichero-mkdocs)
+4. [Subiendo el repositorio a GitHub.](#subiendo-el-repositorio-a-github)
 
 ---
 
@@ -44,6 +44,8 @@ nano mkdocs.yml
 
 # Inicializando fichero mkdocs.yml
 site_name: Tarea Unidad 0 - RA5
+site_description: 'Documentación de la Tarea Unidad 0 - RA5 sobre Git, Docker y CI/CD.'
+site_author: 'Jonathan Barbero Sánchez'
 
 # Estructura de navegación
 nav:

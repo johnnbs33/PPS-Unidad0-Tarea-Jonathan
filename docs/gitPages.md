@@ -1,6 +1,6 @@
 # Vinculación con GitHub Pages.
-1. [GitHub Pages.](#GitHub-Pages)
-2. [URL de GitHub Pages](#URL-de-GitHub-Pages)
+1. [GitHub Pages.](#github-pages)
+2. [URL de GitHub Pages](#url-de-github-pages)
 
 ---
 

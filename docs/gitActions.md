@@ -1,6 +1,6 @@
 # Operaciones con GitHub Actions.
-1. [Creación de WorkFlow.](#Conexión-con-GitHub)
-2. [Prepara los cambios y subida a GitHub](#Subiendo-los-ficheros-a-GitHub)
+1. [Creación de WorkFlow.](#conexion-con-github)
+2. [Prepara los cambios y subida a GitHub](#subiendo-los-ficheros-a-github)
 ---
 
 ## Creación de Workflow.
@@ -12,7 +12,8 @@ nano .github/workflows/CreacionDocumentacion.yml
 ```
 - E incluiremos las siguientes líneas.
 ```yaml
-# -----------------------------------------------------------
+# CreacionDocumentacion.yml
+
 # Configuración del WorkFlow
 
 name: Deploy MkDocs Tarea 0
@@ -58,7 +59,7 @@ jobs:
 
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-# -----------------------------------------------------------
+# Fin del fichero CreacionDocumentacion.yml
 ```
 
 - Pulsamos `Ctrl + O` para guardar los cambios y `Ctrl + X` para salir del editor **nano**.

@@ -2,17 +2,19 @@
 
 # Inicializando fichero mkdocs.yml
 site_name: Tarea Unidad 0 - RA5
+site_description: 'Documentación de la Tarea Unidad 0 - RA5 sobre Git, Docker y CI/CD.'
+site_author: 'Jonathan Barbero Sánchez'
 
 # Estructura de navegación
 nav:
   - Home: index.md
-  - Git: git.md
+  - Git: guia_uso.md
   - GitHub Actions: gitActions.md
   - GitPages: gitPages.md
   - Docker: docker.md
   - Conclusiones: conclusiones.md
 
 # Directorios
-docs_dir: docs
+doc_dir: docs
 
-# Fin del fichero mkdocs.yml
+# Fin del fichero makdocs.yml
