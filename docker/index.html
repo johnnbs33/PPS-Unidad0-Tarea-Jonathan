@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="Jonathan Barbero Sánchez">
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Docker - Tarea Unidad 0 - RA5</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Tarea Unidad 0 - RA5</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../git/" class="nav-link">Git</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../gitActions/" class="nav-link">GitHub Actions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../gitPages/" class="nav-link">GitPages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Docker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../conclusiones/" class="nav-link">Conclusiones</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../gitPages/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../conclusiones/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#docker" class="nav-link">Docker.</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#preparacion-del-repositorio" class="nav-link">Preparación del repositorio.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#creacion-del-entorno-docker" class="nav-link">Creación del entorno Docker.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#inicializando-el-entorno" class="nav-link">Inicializando el entorno.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="docker">Docker.</h1>
+<ol>
+<li><a href="#preparación-del-repositorio">Preparación del del repositorio.</a></li>
+<li><a href="#creación-del-entorno-Docker">Creación del entorno Docker.</a><ol>
+<li><a href="#tips-de-la-rama-gh-pages">Rama gh-pages.</a></li>
+</ol>
+</li>
+<li><a href="#inicializando-el-entorno">Iniciando el entorno</a></li>
+</ol>
+<hr />
+<h2 id="preparacion-del-repositorio">Preparación del repositorio.</h2>
+<ul>
+<li>Cambiaremos a la rama <strong>gh-pages</strong> en local, a partir de la remota de <strong>GitHub</strong>.</li>
+</ul>
+<pre><code class="language-bash">git checkout gh-pages
+</code></pre>
+<blockquote>
+<p>Una vez terminado todo el ejercicio de Docker, si quisieramos volver a la rama <strong>main</strong>, ejecutariamos el comando siguiente:</p>
+</blockquote>
+<pre><code class="language-bash">git checkout main
+</code></pre>
+<ul>
+<li>Si realizamos algun cambio en alguna de las páginas <strong>MarkDown</strong>, tendremos que traer los ultimos cambios de la rama <strong>gh-pages</strong>, que habran sido generados por <code>MkDocs</code>.</li>
+</ul>
+<pre><code class="language-bash">git pull
+</code></pre>
+<hr />
+<h2 id="creacion-del-entorno-docker">Creación del entorno Docker.</h2>
+<ul>
+<li>Orquestaremos un servicio web con un único archivo <strong>docker-compose.yml</strong>.</li>
+<li>Nos situaremos fuera del directorio del repositorio, crearemos un directorio llamado <strong>PPS-Unidad0-Tarea-Jonathan-Docker</strong>.</li>
+</ul>
+<pre><code class="language-bash">mkdir PPS-Unidad0-Tarea-Jonathan-Docker
+</code></pre>
+<ul>
+<li>Situados dentro de él, crearemos el fichero <strong>docker-compose.yml</strong>.</li>
+</ul>
+<pre><code class="language-bash">nano docker-compose.yml
+</code></pre>
+<ul>
+<li>Añadimos el siguiente contenido.</li>
+</ul>
+<pre><code class="language-yaml">services:
+  web:
+    image: nginx:stable
+    container_name: PPSUnidad0-Tarea_Jonathan
+    ports:
+      - &quot;8085:80&quot;
+    volumes:
+      - /home/ppsjonathan/Documentos/PPS/PPS-Unidad0-Tarea-Jonathan:/usr/share/nginx/html
+</code></pre>
+<ul>
+<li>
+<p>Pulsamos <code>Ctrl + O</code> para guardar los cambios y <code>Ctrl + X</code> para salir del editor <strong>nano</strong>.</p>
+</li>
+<li>
+<p>Resumen de las operaciones del fichero Compose:</p>
+</li>
+<li>El servicio se llamara <strong>web</strong>.</li>
+<li>Se creará a partir de la imagen de <strong>nginx estable</strong>.</li>
+<li>El nombre del contenedor será <strong>PPSUnidad0-Tarea_Jonathan</strong>.</li>
+<li>Mapearemos el puerto <strong>8085</strong> del host al <strong>80</strong> del servidor web nginx.</li>
+<li>Definimos <strong>bind mount</strong> del directorio que aloja los ficheros estáticos del repositorio, hacia el directorio donde nginx busca los archivos web.</li>
+</ul>
+<h3 id="tips-de-la-rama-gh-pages">Tips de la rama gh-pages.</h3>
+<p>Para mantener actualizada la rama <strong>gh-pages</strong> local, que es generada automáticamente por <strong>GitHub Actions</strong>, el proceso es un poco diferente a un <strong>git pull</strong> normal, ya que esa rama suele ser reescrita por la <strong>acción</strong>.</p>
+<p>Pero existe una forma de hacerlo, que es <strong>forzar</strong> la rama <strong>local</strong> para que sea un espejo exacto de la rama <strong>remota</strong>.</p>
+<ul>
+<li>Traemos los cambios del repositorio remoto.</li>
+</ul>
+<pre><code class="language-bash">git fetch origin
+</code></pre>
+<ul>
+<li>Nos situamos en la rama <strong>gh-pages</strong>.</li>
+</ul>
+<pre><code class="language-bash">git switch gh-pages
+</code></pre>
+<ul>
+<li>Dado que las GitHub Actions suelen reescribir el historial de <strong>gh-pages</strong>, forzamos la actualización para hacer que la rama local sea exactamente igual a la remota.</li>
+</ul>
+<pre><code class="language-bash">git reset --hard origin/gh-pages
+</code></pre>
+<blockquote>
+<p>Los argumentos del comando (<strong>reset --hard</strong>) descarta todos los cambios que <strong>no estén "commiteados"</strong> en la rama en la que nos encontramos. Sin embargo, como la rama gh-pages es auto-generada, nunca deberiamos de tener cambios locales en ella, por lo que este comando es seguro en este contexto.</p>
+</blockquote>
+<hr />
+<h2 id="inicializando-el-entorno">Inicializando el entorno.</h2>
+<ul>
+<li>A contiunación, <strong>crearemos</strong> y <strong>levantaremos</strong> los servicios definidos en el archivo <strong>docker-compose.yml</strong> en modo <em>detached</em> (segundo plano).</li>
+</ul>
+<pre><code class="language-bash">docker compose up -d
+</code></pre>
+<p><em>En la terminal, observaremos como se levantan los servicios, haciendo </em><em>pull</em><em> de las imagenes si no estuvieran ya.</em>
+- Comprobamos que todo esta funcionando, mediante el siguiente comando:</p>
+<pre><code class="language-bash">docker compose ps
+</code></pre>
+<p><em>La salida nos mostrará los servicios en ejecución, en este caso es solamente uno, y podremos observar el nombre, estado, puertos, entre otros datos.</em>
+- También podemos realizar un inspect del contenedor para visualizar toda la información del mismo.</p>
+<pre><code class="language-bash">docker inspect PPSUnidad0-Tarea_Jonathan
+</code></pre>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
